@@ -1,0 +1,5 @@
+name: OnlyUp
+version: '${project.version}'
+main: de.glowman554.onlyup.OnlyUpMain
+api-version: '1.20'
+depend: [HolographicDisplays]
