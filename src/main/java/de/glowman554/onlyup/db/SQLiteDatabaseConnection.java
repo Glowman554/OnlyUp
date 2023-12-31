@@ -41,4 +41,9 @@ public class SQLiteDatabaseConnection implements Database {
 
         return times.toArray(Time[]::new);
     }
+
+    @Override
+    public void close() throws SQLException {
+        connection.close();
+    }
 }

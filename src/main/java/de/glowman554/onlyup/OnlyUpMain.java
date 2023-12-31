@@ -77,6 +77,11 @@ public final class OnlyUpMain extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        try {
+            database.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static OnlyUpMain getInstance() {
